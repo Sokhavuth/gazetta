@@ -1,8 +1,8 @@
 /*static/styles/base.css*/
 :root{
-  --background: #444c8c;
-  --background-dark: #151c50;
-  --background-light: #7b7bb3;
+  --background: #70aeb4;
+  --background-dark: #50969e;
+  --background-light: #b1ced5;
   --yellow: #ffd343;
   --body-font: 14px/1.75 Vidaloka, OdorMeanChey;
   --link: rgb(231, 230, 230);
@@ -23,7 +23,7 @@ a:hover{
   opacity: .7;
 }
 .region{
-  max-width: 1200px;
+  max-width: 1050px;
   margin: 0 auto;
 }
 
@@ -31,4 +31,8 @@ body{
   color: var(--color);
   font: var(--body-font);
   background: var(--background-light);
+}
+
+.site{
+  margin-top: 30px;
 }

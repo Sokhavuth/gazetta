@@ -9,6 +9,13 @@
         <link href="public/fonts/setup.css" rel="stylesheet" ></link>
         <link href="public/images/site_logo.png" rel="icon" ></link>
         <link href="public/styles/global.css" rel="stylesheet"></link>
-        <link href="public/styles/partials/header.css" rel="stylesheet"></link>
+        <link href="public/styles/header.css" rel="stylesheet"></link>
     </head>
     <body>
+    <div class='site region'>
+
+    <div class="Header ">
+        <div class='wrapper '>
+            <div class='title'><?php echo $blogTitle ?></div>
+        </div>
+    </div>

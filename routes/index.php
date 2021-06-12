@@ -2,9 +2,10 @@
 //routes/index.php
 
 $f3->route('GET /', function($f3){
-    $f3->set('blogTitle','Khmer Web');
+    require('setting.php');
 
     $f3->mset([
+        'blogTitle'=>$setting['blogTitle'],
         'pageTitle'=>'ទំព័រ​ដើម',
         'message'=>'ស្វាគមន៍​មក​កាន់​ទំព័រ​មុខ!'
     ]);
