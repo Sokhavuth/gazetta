@@ -32,3 +32,4 @@
     </div>
 
     <script src='public/scripts/header.js'></script>
+    <?php require('views/menu.php') ?>

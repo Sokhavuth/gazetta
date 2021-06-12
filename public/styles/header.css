@@ -35,6 +35,7 @@
 
 .Header .wrapper .date{
     font: 20px/1.5 Oswald, Bayon;
+    padding-bottom: 5px;
 }
 
 @media only screen and (max-width: 800px){
