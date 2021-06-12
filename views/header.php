@@ -16,6 +16,19 @@
 
     <div class="Header ">
         <div class='wrapper '>
-            <div class='title'><?php echo $blogTitle ?></div>
+            <div class='datetime'>
+                <div class='date'><?php echo $date ?></div>
+                <div class='time' id='kh-clock'>Time</div>
+            </div>
+            <div class='title'>
+                <?php echo $blogTitle ?>
+                <div class='description'><?php echo $description ?></div>
+            </div>
+            <form class='search'>
+                <input type='text' />
+                <input type='submit' value='ស្វែង​រក' />
+            </form>
         </div>
     </div>
+
+    <script src='public/scripts/header.js'></script>
