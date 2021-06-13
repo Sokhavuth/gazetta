@@ -10,7 +10,8 @@ function login($f3){
         'blogTitle'=>$setting['blogTitle'], 
         'description'=>$setting['description'],
         'pageTitle'=>'ទំព័រ​ចុះ​ឈ្មោះ', 
-        'date'=>$setting['date']
+        'date'=>$setting['date'],
+        'message'=>$setting['message']
     ]);
 
     $view=new View;

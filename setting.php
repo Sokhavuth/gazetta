@@ -10,5 +10,6 @@ $date = $_tool->getKhDate(date('Y/m/d'));
 $setting = [];
 
 $setting['date'] = $date;
+$setting['message'] = '';
 $setting['blogTitle'] = 'កាសែត​យើង';
 $setting['description'] = 'ព័ត៌មាន​ពិត​ឥត​លំអៀង';
