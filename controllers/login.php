@@ -3,8 +3,8 @@
 
 function login($f3){
     require_once('setting.php');
-    //require_once('controllers/admin/users/table.php');
-    //table($f3);
+    require_once('controllers/admin/users/table.php');
+    table($f3);
 
     $f3->mset([
         'blogTitle'=>$setting['blogTitle'], 
