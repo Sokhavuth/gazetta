@@ -11,9 +11,9 @@ require_once('routes/admin.php');
 //$dotenv->load();
 
 $db = new DB\SQL(
-    'mysql:host='.$_ENV['HOST'].';port='.$_ENV['PORT'].';dbname='.$_ENV['DATABASE'],
-    $_ENV['USERNAME'],
-    $_ENV['PASSWORD']
+    'mysql:host='.$_SERVER['HOST'].';port='.$_SERVER['PORT'].';dbname='.$_SERVER['DATABASE'],
+    $_SERVER['USERNAME'],
+    $_SERVER['PASSWORD']
 );
 
 $f3->set('CACHE',TRUE);
