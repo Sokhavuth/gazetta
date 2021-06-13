@@ -10,13 +10,18 @@ require_once('routes/admin.php');
 //$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 //$dotenv->load();
 
-$host = getenv('HOST');
-echo $host;
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_host = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"],1);
+$active_group = 'default';
+$query_builder = TRUE;
 
 $db = new DB\SQL(
-    'mysql:host='.$_SERVER['HOST'].';port='.$_SERVER['PORT'].';dbname='.$_SERVER['DATABASE'],
-    $_SERVER['USERNAME'],
-    $_SERVER['PASSWORD']
+    'mysql:host='.$cleardb_host.';port=3306;dbname='.$cleardb_db,
+    $cleardb_username,
+    $cleardb_password
 );
 
 $f3->set('CACHE',TRUE);
