@@ -33,8 +33,7 @@ $db = new DB\SQL(
     $cleardb_password
 );
 
-$f3->set('CACHE',TRUE);
-new \DB\SQL\Session($db);
+session_start();
 
 $f3->set('DB', $db);
 
