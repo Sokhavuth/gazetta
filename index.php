@@ -7,8 +7,8 @@ $f3 = \Base::instance();
 require_once('routes/index.php');
 require_once('routes/admin.php');
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+//$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+//$dotenv->load();
 
 $db = new DB\SQL(
     'mysql:host='.$_ENV['HOST'].';port='.$_ENV['PORT'].';dbname='.$_ENV['DATABASE'],
