@@ -1,0 +1,31 @@
+/*public/styles/login.css*/
+
+.Login{
+    width: 400px;
+    margin: 20px auto;
+    background: var(--background-dark);
+}
+
+.Login .title{
+    text-align: center;
+    font: 19px/1.5 Anton, Koulen;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+.Login form{
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-gap: 5px;
+    align-items: center;
+    padding: 20px;
+}
+
+.Login form span{
+    text-align: right;
+}
+
+.Login form input{
+    font: var(--body-font);
+    padding: 0 10px;
+}
