@@ -10,6 +10,9 @@ require_once('routes/admin.php');
 //$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 //$dotenv->load();
 
+$host = getenv('HOST');
+echo $host;
+
 $db = new DB\SQL(
     'mysql:host='.$_SERVER['HOST'].';port='.$_SERVER['PORT'].';dbname='.$_SERVER['DATABASE'],
     $_SERVER['USERNAME'],
