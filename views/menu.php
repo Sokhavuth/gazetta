@@ -5,7 +5,7 @@
 <section class='Menu'>
     <nav class='wrapper'>
         <div class="topnav" id="myTopnav">
-            <a href="#home" class="active">ទំព័រ​ដើម</a>
+            <a href="./" class="active">ទំព័រ​ដើម</a>
             <a href="#news">ព័ត៌មាន</a>
             <a href="#contact">ទំនាក់ទំនង</a>
             <div class="dropdown">
@@ -19,7 +19,7 @@
                 </div>
             </div>
             <a href="#about">អំពី​យើង​ខ្ញុំ</a>
-            <a href="./admin">ចូល​ក្នុង</a>
+            <a href="./login">ចូល​ក្នុង</a>
             <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">&#9776;</a>
         </div>
     </nav>
