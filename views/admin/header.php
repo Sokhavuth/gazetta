@@ -1,4 +1,4 @@
-<!--views/header.php-->
+<!--views/admin/header.php-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -20,6 +20,9 @@
                 <?php echo $pageTitle ?>
             </div>
             <form class='search'>
+                <select name='category'>
+                    <option>ការផ្សាយ</option>
+                </select>
                 <input type='text' />
                 <input type='submit' value='ស្វែង​រក' />
             </form>
