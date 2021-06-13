@@ -19,7 +19,7 @@ function table($kw){
     $user = $kw->get('DB')->exec('SELECT * FROM users LIMIT 1');
     
     if(!$user){
-        $kw->get('DB')->exec('INSERT INTO users (email, password) VALUES("root@tv.com", "password")');
+        $kw->get('DB')->exec('INSERT INTO users (email, password) VALUES("xxxx@xxxxx", "xxxxxx")');
     }
     
 }

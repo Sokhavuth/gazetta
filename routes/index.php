@@ -7,6 +7,16 @@ $f3->route('GET /', function($f3){
 });
 
 $f3->route('GET /login', function($f3){
-    require('controllers/login.php');
-    login($f3);
+    if($f3->get('SESSION.email')){
+        require_once('controllers/admin/index.php');
+        index($f3);
+    }else{
+        require_once('controllers/login.php');
+        login($f3);
+    }
+});
+
+$f3->route('POST /login', function($f3){
+    require('controllers/admin/users/checkUser.php');
+    checkUser($f3);
 });

@@ -5,7 +5,7 @@ require 'vendor/autoload.php';
 $f3 = \Base::instance();
 
 require_once('routes/index.php');
-require_once('routes/admin.php');
+require_once('routes/admin/index.php');
 
 require('tool.php');
 $_tool = new Tool();

@@ -7,7 +7,7 @@ function index($f3){
     $f3->mset([
         'blogTitle'=>$setting['blogTitle'], 
         'description'=>$setting['description'],
-        'pageTitle'=>'ទំព័រ​ដើម', 
+        'pageTitle'=>'ទំព័រ​គ្រប់គ្រង', 
         'date'=>$setting['date']
     ]);
 
