@@ -4,6 +4,8 @@
 require 'vendor/autoload.php';
 $f3 = \Base::instance();
 
+session_start();
+
 require_once('routes/index.php');
 require_once('routes/admin/index.php');
 
@@ -20,7 +22,7 @@ if($localhost){
     $cleardb_password = $_ENV["PASSWORD"];
     $cleardb_db = $_ENV["DATABASE"];
 }else{
-    $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    $cleardb_url = parse_url(getenv("DATABASE_URL"));
     $cleardb_host = $cleardb_url["host"];
     $cleardb_username = $cleardb_url["user"];
     $cleardb_password = $cleardb_url["pass"];
@@ -28,12 +30,9 @@ if($localhost){
 }
 
 $db = new DB\SQL(
-    'mysql:host='.$cleardb_host.';port=3306;dbname='.$cleardb_db,
-    $cleardb_username,
-    $cleardb_password
+    'mysql:host='.$cleardb_host.';port=3306;dbname='.$cleardb_db, $cleardb_username, $cleardb_password,
+    [\PDO::MYSQL_ATTR_INIT_COMMAND=>'SET NAMES utf8;']
 );
-
-session_start();
 
 $f3->set('DB', $db);
 
