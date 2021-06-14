@@ -30,7 +30,9 @@ if($localhost){
 }
 
 $db = new DB\SQL(
-    'mysql:host='.$cleardb_host.';port=3306;dbname='.$cleardb_db, $cleardb_username, $cleardb_password
+    'mysql:host='.$cleardb_host.';port=3306;dbname='.$cleardb_db, 
+    $cleardb_username, 
+    $cleardb_password
 );
 
 $f3->set('DB', $db);
