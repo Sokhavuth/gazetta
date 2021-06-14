@@ -22,7 +22,7 @@ if($localhost){
     $cleardb_password = $_ENV["PASSWORD"];
     $cleardb_db = $_ENV["DATABASE"];
 }else{
-    $cleardb_url = parse_url(getenv("DATABASE_URL"));
+    $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
     $cleardb_host = $cleardb_url["host"];
     $cleardb_username = $cleardb_url["user"];
     $cleardb_password = $cleardb_url["pass"];
